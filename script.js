@@ -28,7 +28,19 @@ function renderCatalog() {
   var list = P.filter(function(p) { return cat === "Semua" || p.cat === cat; });
   $("#grid").innerHTML = list.map(function(p) {
     var min = Math.min.apply(null, p.opts.map(function(o) { return o[1]; }));
-    return '<article class="tile"><div class="sw" style="background:' + p.col + '" aria-hidden="true">' + p.n.charAt(0) + '</div><div class="bd"><h3>' + p.n + '</h3><p>' + p.d + '</p><div class="pr">' + (min ? 'Mulai ' + rp(min) + ' / ' + p.u : 'Harga dikonfirmasi admin') + '</div><div style="font-size:13px;color:var(--mut)">Pengerjaan ' + p.est + '</div><button class="btn" data-o="' + p.id + '">Pesan</button></div></article>';
+    return '<article class="tile">' +
+      '<div class="sw" style="background:linear-gradient(135deg, ' + p.col + ', #14161f)" aria-hidden="true">' +
+        '<span class="tag">' + p.cat + '</span>' +
+        '<span class="init">' + p.n.charAt(0) + '</span>' +
+      '</div>' +
+      '<div class="bd">' +
+        '<h3>' + p.n + '</h3>' +
+        '<p>' + p.d + '</p>' +
+        '<div class="pr">' + (min ? 'Mulai ' + rp(min) + ' / ' + p.u : 'Harga dikonfirmasi admin') + '</div>' +
+        '<div class="est">⏱ Pengerjaan ' + p.est + '</div>' +
+        '<button class="btn" data-o="' + p.id + '">Pesan Sekarang</button>' +
+      '</div>' +
+    '</article>';
   }).join("");
 }
 
