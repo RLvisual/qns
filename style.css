@@ -87,7 +87,10 @@ header {
   position: sticky;
   top: env(safe-area-inset-top, 0px);
   z-index: 9;
-  background: var(--bg);
+  /* Efek kaca transparan */
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--ln);
 }
 
