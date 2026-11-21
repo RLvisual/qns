@@ -3,63 +3,145 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>QNS Digital Printing</title>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<title>QNS Digital Printing — Cetak Cepat & Berkualitas</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
-<header><div class="wrap">
-<a class="logo" href="#top"><i>QNS</i> Digital Printing</a>
-<nav><a href="#layanan">Layanan</a><a href="#cara">Cara pesan</a><a href="#lacak">Lacak</a></nav>
-</div></header>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="logo-mark">Q</span><i>QNS</i> Digital Printing</a>
+    <nav>
+      <a href="#layanan">Layanan</a>
+      <a href="#cara">Cara pesan</a>
+      <a href="#lacak">Lacak</a>
+    </nav>
+  </div>
+</header>
 
 <main id="top">
-<div class="wrap hero">
-<div class="hl">
-<h1>QNS Digital Printing</h1>
-<p>QNS Digital Printing melayani kebutuhan cetak pribadi, sekolah, dan usaha: banner, piagam akrilik, stiker, kartu nama, undangan, sampai kaos sablon. Dikerjakan dari desain sampai cetak, dengan bahan yang jelas dan harga yang bisa kamu hitung sendiri sebelum memesan.</p>
-<a class="btn" href="#layanan">Lihat layanan</a><a class="btn ghost" href="#lacak">Lacak pesanan</a>
-<div class="bars" aria-hidden="true"><span style="background:#d8161c"></span><span style="background:#14161f"></span><span style="background:#d8161c;opacity:.5"></span><span style="background:#14161f;opacity:.5"></span><span style="background:#d8161c;opacity:.25"></span></div>
-</div>
-<aside class="stats" aria-label="Statistik QNS Digital Printing"><div class="big"><div><b id="s-trx">0</b><span>transaksi diproses</span></div><div><b id="s-jual">0</b><span>produk terjual</span></div></div><div id="mt"></div></aside>
-</div>
+  <div class="hero-bg">
+    <div class="wrap hero">
+      <div class="hl">
+        <div class="pill-badge"><span class="dot"></span> Buka Setiap Hari · 08.00 – 20.00 WIB</div>
+        <h1>Cetak Apa Saja, <span class="txt-accent">Hitung Sendiri</span> Harganya.</h1>
+        <p>Melayani kebutuhan cetak pribadi, sekolah, dan bisnis: banner, stiker, kartu nama, undangan, hingga jersey & sablon DTF. Transparan dari desain sampai hasil cetak.</p>
+        <div class="hero-acts">
+          <a class="btn" href="#layanan">Pilih Layanan</a>
+          <a class="btn ghost" href="#lacak">Lacak Pesanan</a>
+        </div>
+        <div class="cmyk-bar" aria-hidden="true">
+          <span style="background:#00aeef" title="Cyan"></span>
+          <span style="background:#ec008c" title="Magenta"></span>
+          <span style="background:#fff200" title="Yellow"></span>
+          <span style="background:#14161f" title="Key/Black"></span>
+        </div>
+      </div>
 
-<section id="layanan"><div class="wrap">
-<h2>Layanan</h2>
-<p class="sub">Harga di bawah adalah harga mulai dari. Total pasti dihitung saat kamu mengisi ukuran.</p>
-<div class="chips" id="chips"></div>
-<div class="grid" id="grid"></div>
-</div></section>
+      <aside class="stats" aria-label="Statistik QNS Digital Printing">
+        <div class="stats-head">Performa Layanan Kami</div>
+        <div class="big">
+          <div class="stat-box">
+            <b id="s-trx">0</b>
+            <span>transaksi diproses</span>
+          </div>
+          <div class="stat-box">
+            <b id="s-jual">0</b>
+            <span>produk terjual</span>
+          </div>
+        </div>
+        <div id="mt"></div>
+      </aside>
+    </div>
+  </div>
 
-<section id="cara"><div class="wrap">
-<h2>Cara pesan</h2>
-<p class="sub">Online atau datang langsung ke toko, hasilnya sama.</p>
-<ol class="steps">
-<li><b>Pilih produk</b><span>Buka layanan, tekan Pesan pada produk yang kamu mau.</span></li>
-<li><b>Atur pesanan</b><span>Pilih bahan, isi ukuran dan jumlah, lampirkan desain.</span></li>
-<li><b>Isi nama dan nomor WA</b><span>Wajib diisi supaya pesananmu bisa dihubungi.</span></li>
-<li><b>Simpan struk</b><span>Catat kode pesanan, lalu pantau statusnya di halaman ini.</span></li>
-</ol>
-</div></section>
+  <section id="layanan">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Katalog Layanan</h2>
+        <p class="sub">Harga di bawah adalah estimasi mulai dari. Total pasti dihitung otomatis saat kamu mengisi ukuran & bahan.</p>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
 
-<section id="lacak"><div class="wrap">
-<h2>Lacak pesanan</h2>
-<p class="sub">Masukkan kode pesanan dari struk.</p>
-<form class="lacak" id="lf"><input id="lk" placeholder="Contoh: QNS-251107-482" aria-label="Kode pesanan" autocomplete="off"><button class="btn" type="submit">Cek status</button></form>
-<div class="recent" id="recent"></div>
-<div id="lr"></div>
-</div></section>
+  <section id="cara" class="sec-alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Cara Pesan</h2>
+        <p class="sub">Pesan online dari rumah atau datang langsung ke toko, proses cepat dan transparan.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <b>Pilih produk</b>
+          <span>Cari kebutuhan cetakmu di katalog, lalu tekan tombol <em>Pesan Sekarang</em>.</span>
+        </li>
+        <li>
+          <b>Atur spesifikasi</b>
+          <span>Pilih bahan, masukkan ukuran atau jumlah, dan lampirkan file desainmu.</span>
+        </li>
+        <li>
+          <b>Isi kontak WA</b>
+          <span>Masukkan nama & nomor WhatsApp aktif untuk konfirmasi pesanan.</span>
+        </li>
+        <li>
+          <b>Simpan kode struk</b>
+          <span>Gunakan kode pesanan dari struk untuk memantau progres cetak secara real-time.</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="lacak">
+    <div class="wrap">
+      <div class="lacak-card">
+        <div class="sec-head">
+          <h2>Lacak Pesanan</h2>
+          <p class="sub">Masukkan kode pesanan yang tertera pada struk digitalmu.</p>
+        </div>
+        <form class="lacak" id="lf">
+          <input id="lk" placeholder="Contoh: QNS-261121-482" aria-label="Kode pesanan" autocomplete="off">
+          <button class="btn" type="submit">Cek Status</button>
+        </form>
+        <div class="recent" id="recent"></div>
+        <div id="lr"></div>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer><div class="wrap">QNS Digital Printing · Buka setiap hari 08.00–20.00 · Pesanan tersimpan di perangkat ini (versi percobaan) · <a href="#" id="admlink" style="color:inherit">Admin</a></div></footer>
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <strong class="foot-brand"><i>QNS</i> Digital Printing</strong>
+      <p>Buka setiap hari 08.00–20.00 · Data pesanan tersimpan di perangkat ini (versi percobaan).</p>
+    </div>
+    <div class="foot-links">
+      <a href="#layanan">Layanan</a>
+      <a href="#cara">Cara pesan</a>
+      <a href="#" id="admlink">Panel Admin</a>
+    </div>
+  </div>
+</footer>
 
-<div class="adm" id="adm"><div class="wrap">
-<div class="ah"><h2 id="ah-t">Dashboard</h2><button class="btn ghost" id="a-off">Pesanan offline</button><button class="btn ghost" id="a-out">Keluar</button></div>
-<div id="a-sum"></div><div class="chips" id="a-chips"></div><div id="a-list"></div>
-</div></div>
+<div class="adm" id="adm">
+  <div class="wrap">
+    <div class="ah">
+      <h2 id="ah-t">Dashboard</h2>
+      <button class="btn ghost" id="a-off">Pesanan offline</button>
+      <button class="btn ghost" id="a-out">Keluar</button>
+    </div>
+    <div id="a-sum"></div>
+    <div class="chips" id="a-chips"></div>
+    <div id="a-list"></div>
+  </div>
+</div>
+
 <div id="offbar">Mode pesanan offline aktif <button id="off-x">Batal</button></div>
 <div class="ov" id="ov" role="dialog" aria-modal="true"><div class="md" id="md"></div></div>
 
-<script src="script.js"></script>
+<script src="script.js?v=2"></script>
 </body>
 </html>
