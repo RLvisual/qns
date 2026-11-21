@@ -243,12 +243,16 @@ nav a:hover {
   border-radius: 999px;
   cursor: pointer;
   text-decoration: none;
+  /* Tambahan animasi halus */
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover {
   background: var(--m);
   border-color: var(--m);
   color: #fff;
+  transform: translateY(-2px); /* Tombol sedikit naik */
+  box-shadow: 0 6px 16px rgba(216, 22, 28, 0.25); /* Bayangan merah tipis */
 }
 
 .btn.ghost {
@@ -293,11 +297,10 @@ h2 {
   border-radius: 999px;
   cursor: pointer;
   font-weight: 500;
+  transition: all 0.2s ease;
 }
 
-.chip[aria-pressed="true"] {
-  background: var(--ink);
-  color: var(--bg);
+.chip:hover:not([aria-pressed="true"]) {
   border-color: var(--ink);
 }
 
@@ -310,10 +313,18 @@ h2 {
 .tile {
   background: var(--sf);
   border: 1px solid var(--ln);
-  border-radius: 6px 26px 6px 6px;
+  border-radius: 14px; /* Sudut membulat seragam agar lebih bersih */
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  /* Tambahan animasi halus */
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.tile:hover {
+  transform: translateY(-5px); /* Kartu terangkat saat disorot */
+  border-color: var(--m);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
 .tile .sw {
